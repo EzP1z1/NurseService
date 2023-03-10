@@ -7,7 +7,7 @@ from django.contrib import admin
 from django.contrib.admin import ModelAdmin
 from apps.users.models import CustomUser
 
-from models import Nurse
+from .models import Nurse
 
 
 admin.site.register(CustomUser)
