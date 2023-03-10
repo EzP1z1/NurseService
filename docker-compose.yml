@@ -18,20 +18,6 @@ services:
       networks:
          - core
 
-   # postgres-db:
-   #   restart: always
-   #   image: postgres:latest
-   #   volumes:
-   #     - postgres_data:/var/lib/postgresql/data/
-   #   ports:
-   #     - 5432:5432
-   #   environment:
-   #     - POSTGRES_DB=NurseService
-   #     - POSTGRES_USER=postgres
-   #     - POSTGRES_PASSWORD=postgres
-   #   networks:
-   #     - core
-
    postgres-db:
       image: kartoza/postgis:12.1
       ports:
